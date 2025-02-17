@@ -1,0 +1,123 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": true,
+            "customGradients": true,
+            "gradients": [
+                {
+                    "slug": "primary-gradient-top",
+                    "gradient": "linear-gradient(180deg, #93C5FD 0%, #1D4ED8 60%)",
+                    "name": "Primary Gradient Top"
+                },
+                {
+                    "slug": "primary-gradient-bottom",
+                    "gradient": "linear-gradient(360deg, #93C5FD 0%, #1D4ED8 60%)",
+                    "name": "Primary Gradient Bottom"
+                },
+                {
+                    "slug": "secondary-gradient-top",
+                    "gradient": "linear-gradient(180deg, #6EE7B7 0%, #34D399 60%)",
+                    "name": "Secondary Gradient Top"
+                },
+                {
+                    "slug": "secondary-gradient-bottom",
+                    "gradient": "linear-gradient(360deg, #6EE7B7 0%, #34D399 60%)",
+                    "name": "Secondary Gradient Bottom"
+                },
+                {
+                    "slug": "tertiary-gradient-top",
+                    "gradient": "linear-gradient(180deg, #FFEDD5 0%, #FACC15 60%)",
+                    "name": "Tertiary Gradient Top"
+                },
+                {
+                    "slug": "tertiary-gradient-bottom",
+                    "gradient": "linear-gradient(360deg, #FFEDD5 0%, #FACC15 60%)",
+                    "name": "Tertiary Gradient Bottom"
+                },
+                {
+                    "slug": "fade-gradient-top",
+                    "gradient": "linear-gradient(180deg, #FFFFFF 0%, #93C5FD 60%)",
+                    "name": "Fade Gradient Top"
+                },
+                {
+                    "slug": "fade-gradient-bottom",
+                    "gradient": "linear-gradient(360deg, #FFFFFF 0%, #93C5FD 60%)",
+                    "name": "Fade Gradient Bottom"
+                }
+            ],
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#1D4ED8",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#34D399",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "tertiary",
+                    "color": "#FACC15",
+                    "name": "Tertiary"
+                },
+                {
+                    "slug": "primary-light",
+                    "color": "#93C5FD",
+                    "name": "Primary Light"
+                },
+                {
+                    "slug": "secondary-light",
+                    "color": "#6EE7B7",
+                    "name": "Secondary Light"
+                },
+                {
+                    "slug": "tertiary-light",
+                    "color": "#FFEDD5",
+                    "name": "Tertiary Light"
+                },
+                {
+                    "slug": "background",
+                    "color": "#FFFFFF",
+                    "name": "Background"
+                },
+                {
+                    "slug": "background-alt",
+                    "color": "#F3F3F3",
+                    "name": "Background Alternative"
+                },
+                {
+                    "slug": "heading",
+                    "color": "#333333",
+                    "name": "Heading Color"
+                },
+                {
+                    "slug": "sub-heading",
+                    "color": "#000000",
+                    "name": "Sub Heading Color"
+                },
+                {
+                    "slug": "border",
+                    "color": "#000000",
+                    "name": "Border"
+                },
+                {
+                    "slug": "border-alt",
+                    "color": "#CCCCCC",
+                    "name": "Border Alternative"
+                },
+                {
+                    "slug": "gold-star",
+                    "color": "#FACC15",
+                    "name": "Gold Star"
+                },
+                {
+                    "slug": "transparent",
+                    "color": "rgba(0, 0, 0, 0)",
+                    "name": "Transparent"
+                }
+            ]
+        }
+    }
+}

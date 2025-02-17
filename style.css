@@ -1,0 +1,458 @@
+/*
+Theme Name: Vasileus Small Business
+Theme URI: https://cozythemes.com/fotawp/
+Template: fotawp
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: FotaWP is a lightweight, block-based, multipurpose WordPress theme designed to be responsive, SEO-friendly, and optimized for speed. It seamlessly integrates with both Full Site Editing (FSE) and your favorite page builder, Elementor. With over 130+ pre-built ready-to-use patterns, more than 40+ advanced Elementor widgets, and 28+ pre-built demos that can be imported with just one click. It is fully compatible with your favorite page builders and plugins, including Elementor, Gutenberg, Yoast SEO, RankMath, Contact Form, Jetpack, WooCommerce, and more. With FotaWP's exceptional support and compatibility with both FSE and Elementor, users can take full control over their site and achieve stunning websites as per their design and requirements, even with zero coding knowledge. Users can redesign and reconstruct their site from scratch with the help of our professionally crafted patterns and demos. With its wide range of features and customization options, FotaWP is suitable for various niches such as agencies, small businesses, corporate entities, startups, home services, HVAC services, education and e-learning platforms, health and fitness centers, insurance services, e-commerce shops and stores (WooCommerce), product catalogue, entertainment and media platforms, magazines, news outlets, bloggers, vloggers, writers, authors, automobile businesses, travel agencies, real estate firms, online courses and learning management systems (LMS), digital marketing agencies, SEO agencies, web agencies, consulting firms, technology companies, cybersecurity experts, public speakers, social media influencers, freelancers, portfolios and galleries, gadgets and technology enthusiasts, charities and nonprofit organizations, restaurants and food cafes, hotels and resorts, colleges, schools, pet care services, gardening and agriculture ventures, photography studios, art and creative studios, and various other professional services. Whether you're a developer or just starting out, FotaWP provides step-by-step documentation, video tutorials, and top-notch support to assist you on your journey. Discover more about FotaWP at https://www.cozythemes.com/fotawp/.
+Tags: blog,one-column,custom-background,custom-colors,custom-logo,custom-menu,editor-style,featured-images,e-commerce,full-site-editing,block-patterns,full-width-template,rtl-language-support,threaded-comments,translation-ready,block-styles,wide-blocks
+Version: 2.0.3.1737863521
+Updated: 2025-01-26 03:52:01
+
+*/
+
+
+:root { 
+    --fs-base: 16px;
+    --font-heading: 'Open Sans', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    
+    /* Solid Colors */
+    --color-primary: #1D4ED8;
+    --color-secondary: #34D399;
+    --color-tertiary: #FACC15;
+    --color-primary-light: #93C5FD;
+    --color-secondary-light: #6EE7B7;
+    --color-tertiary-light: #FFEDD5;
+    --color-background: #FFFFFF;
+    --color-background-alt: #F3F3F3;
+    --color-heading: #333333;
+    --color-sub-heading: #222222;
+    --color-border: #000000;
+    --color-border-alt: #CCCCCC;
+    --color-gold-star: #FACC15;
+    --color-transparent: rgba(0, 0, 0, 0);
+
+    /* Gradients */
+    --gradient-primary-top: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
+    --gradient-primary-bottom: linear-gradient(360deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
+    --gradient-secondary-top: linear-gradient(180deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
+    --gradient-secondary-bottom: linear-gradient(360deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
+    --gradient-tertiary-top: linear-gradient(180deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
+    --gradient-tertiary-bottom: linear-gradient(360deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
+    --gradient-fade-top: linear-gradient(180deg, var(--color-background) 0%, var(--color-primary-light) 60%);
+    --gradient-fade-bottom: linear-gradient(360deg, var(--color-background) 0%, var(--color-primary-light) 60%);
+
+    /* Fade Gradient Masks */
+    --fade-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%);
+    
+}
+
+
+
+/* ======================================================================================================================================== */
+/* TYPOGRAPHY & SIZES */
+/* ======================================================================================================================================== */
+
+html { font-size: var(--fs-base); }
+
+/* Set Open Sans as the default font, but allow overrides */
+.wp-block-heading {
+    font-family: var(--font-heading, 'Open Sans', sans-serif);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* Ensure manually selected fonts override the default */
+.wp-block-heading[style*="font-family"] { font-family: inherit ; }
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
+    text-decoration: none;
+    text-transform: capitalize; /* Capitalize first letter of each word */;
+    color: var(--color-heading);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.75rem; }
+h3 { font-size: 2.125rem; }
+h4 { font-size: 1.5rem; font-weight: bold; }
+h5 { font-size: 1.25rem; }
+p, ul, ol { 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    font-family: var(--font-body); 
+    text-decoration: none; 
+    color: var(--color-sub-heading);
+}
+p.large, ul.large, ol.large {
+    font-size: 1.25rem; /* Default large size */
+}
+
+
+/* ==================================================================== */
+/* Responsive Adjustments -- TYPOGRAPHY */
+/* ==================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 1.875rem; }
+    h4 { font-size: 1.375rem; }
+    h5 { font-size: 1.125rem; }
+    h1.small { font-size: 2.5rem; }
+    h2.small { font-size: 2.125rem; }
+    h3.small { font-size: 1.625rem; }
+    h4.small { font-size: 1.25rem; }
+    h5.small { font-size: 1rem; }
+    p, ul, ol { font-size: 0.9375rem; line-height: 1.5; }
+    p.large, ul.large, ol.large { font-size: 1.125rem; }
+}
+
+@media (max-width: 767px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1.125rem; }
+    h1.small { font-size: 2rem; }
+    h2.small { font-size: 1.75rem; }
+    h3.small { font-size: 1.375rem; }
+    h4.small { font-size: 1.125rem; }
+    h5.small { font-size: 0.9375rem; }
+    p, ul, ol { font-size: 0.875rem; line-height: 1.4; }
+    p.large, ul.large, ol.large { font-size: 0.875rem; line-height: 1.4; }
+}
+
+
+
+
+
+/* ======================================================================================================================================== */
+/* BUTTONS */
+/* ======================================================================================================================================== */
+
+/* Fix: Ensure "default" doesn't override the bold default */
+.wp-block-button__link:not([style]), .elementor-button:not([style]) { font-weight: bold; }
+.wp-block-buttons { margin: 0px; padding: 0px; }
+.wp-block-button__link:focus { outline: 2px solid var(--color-secondary); }
+
+
+body button, .wp-block-button__link, .elementor-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ==================================================================== */
+/* Responsive Adjustments -- BUTTONS */
+/* ==================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body button, .wp-block-button__link, .elementor-button {
+        font-size: 0.9375rem; /* 15px */
+        padding: 0.625rem 1.25rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    body button, .wp-block-button__link, .elementor-button {
+        font-size: 0.875rem; /* 14px */
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+
+/* ==================================================================== */
+/* Button 1 (Primary Button) */
+/* ==================================================================== */
+.wp-block-button.is-style-button-1 .wp-block-button__link, 
+.wp-block-button.is-style-button-1-rad-10 .wp-block-button__link, 
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Button 1 - Hover */
+.wp-block-button.is-style-button-1 .wp-block-button__link:hover,
+.wp-block-button.is-style-button-1-rad-10 .wp-block-button__link:hover,
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Button 1 - Radius Variants */
+.wp-block-button.is-style-button-1-rad-10 .wp-block-button__link { border-radius: 10px; }
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link { border-radius: 30px; }
+
+
+
+/* ==================================================================== */
+/* Button 2 (Secondary Button - Inverted) */
+/* ==================================================================== */
+.wp-block-button.is-style-button-2 .wp-block-button__link,
+.wp-block-button.is-style-button-2-rad-10 .wp-block-button__link,
+.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+/* Button 2 - Hover */
+.wp-block-button.is-style-button-2 .wp-block-button__link:hover,
+.wp-block-button.is-style-button-2-rad-10 .wp-block-button__link:hover,
+.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link:hover {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+/* Button 2 - Radius Variants */
+.wp-block-button.is-style-button-2-rad-10 .wp-block-button__link { border-radius: 10px; }
+.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link { border-radius: 30px; }
+
+
+
+/* ==================================================================== */
+/* Button 3 (Text-Only) */
+/* ==================================================================== */
+.wp-block-button.is-style-button-3-primary .wp-block-button__link,
+.wp-block-button.is-style-button-3-secondary .wp-block-button__link,
+.wp-block-button.is-style-button-3-white .wp-block-button__link {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* Button 3 - Hover */
+.wp-block-button.is-style-button-3-primary .wp-block-button__link:hover,
+.wp-block-button.is-style-button-3-secondary .wp-block-button__link:hover,
+.wp-block-button.is-style-button-3-white .wp-block-button__link:hover {
+    color: var(--color-tertiary);
+}
+
+/* Button 3 - Variants */
+.wp-block-button.is-style-button-3-primary .wp-block-button__link   { color: var(--color-primary); }
+.wp-block-button.is-style-button-3-secondary .wp-block-button__link { color: var(--color-secondary); }
+.wp-block-button.is-style-button-3-white .wp-block-button__link     { color: #FFFFFF; }
+
+
+
+
+
+
+/* ======================================================================================================================================== */
+/* IMAGES */
+/* ======================================================================================================================================== */
+
+.image-zoom { overflow: hidden; display: inline-block; }
+
+.image-zoom img { 
+  width: 100%; /* Ensures it maintains the same width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-zoom:hover img { transform: scale(1.2); /* Zooms in the image */ }
+
+/* ==================================================================== */
+/* Responsive Adjustments -- IMAGES */
+/* ==================================================================== */
+@media (min-width: 1025px) {
+    .heading-image-square.desktop { width: 500px; height: auto; }
+    .heading-image-wide.desktop   { width: 1000px; height: auto; }
+    .small-image.desktop          { width: 80px; height: auto; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .heading-image-square.tablet { width: 500px; height: auto; }
+    .heading-image-wide.tablet   { width: 600px; height: auto; }
+    .small-image.tablet          { width: 70px; height: auto; }
+}
+
+@media (max-width: 767px) {
+    .heading-image-square.mobile { width: 200px; height: auto; }
+    .heading-image-wide.mobile   { width: 300px; height: auto; }
+    .small-image.mobile          { width: 60px; height: auto; }
+}
+
+
+/* ======================================================================================================================================== */
+/* MISCELLANEOUS CODE */
+/* ======================================================================================================================================== */
+
+/* Removes the underline decoration from links */
+.entry-content.wp-block-post-content a, .wp-block-comment-content a, p a, .wp-block-heading a { text-decoration: none; }
+
+ul { display: flex; flex-direction: column; } /* Ensures items stack vertically */
+
+.wp-block-group { margin: 0; padding: 0; } /* Removes default margins for all new WordPress groups */
+.wp-block-group.shadow { border: 1px solid transparent; }
+
+.preheading {
+    color: var(--color-primary);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500; /* Medium */
+}
+.preheading.tight { letter-spacing: 2px; font-weight: bold; }
+
+.shadow { box-shadow: 0px 0px 10px 0px black;} 
+
+
+
+
+
+/* ==================================================================== */
+/* GRID BACKGROUND EFFECTS */
+/* ==================================================================== */
+.is-style-bg-white                           { background-color: #FFFFFF; }
+.is-style-bg-light                           { background-color: #F3F3F3; }
+.is-style-bg-dark                            { background-color: #000000; }
+.is-style-bg-primary                         { background-color: var(--color-primary); }
+.is-style-bg-grid-3d-narrow                  { background: var(--fade-gradient), url(images-grids/grid-3d-narrow.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-3d-wide                    { background: var(--fade-gradient), url(images-grids/grid-3d-wide.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-full                       { background: var(--fade-gradient), url(images-grids/grid-full.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-full-wide                  { background: var(--fade-gradient), url(images-grids/grid-full-wide.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-full-diagonal              { background: var(--fade-gradient), url(images-grids/grid-full-diagonal.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-diagonal-top               { background: var(--fade-gradient), url(images-grids/grid-diagonal-top.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-diagonal-bottom            { background: var(--fade-gradient), url(images-grids/grid-diagonal-bottom.svg) no-repeat; background-size: 100%; }
+.is-style-bg-grid-dots                       { background: var(--fade-gradient), url(images-grids/grid-dots.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-horizontal-top             { background: var(--fade-gradient), url(images-grids/dots-horizontal-top.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-circle-top-right           { background: var(--fade-gradient), url(images-grids/dots-circle-top-right.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-circle-top-left            { background: var(--fade-gradient), url(images-grids/dots-circle-top-left.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-square-top-right           { background: var(--fade-gradient), url(images-grids/dots-square-top-right.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-square-top-left            { background: var(--fade-gradient), url(images-grids/dots-square-top-left.svg) no-repeat; background-size: 100%; }
+.is-style-bg-dots-arrows                     { background: var(--fade-gradient), url(images-grids/dots-arrows.svg) no-repeat; background-size: 100%; }
+
+
+
+/* ==================================================================== */
+/* Separator Line */
+/* ==================================================================== */
+.wp-block-separator                        { margin: 0; }
+.wp-block-separator.is-style-separator-25  { width: 25% !important; }
+.wp-block-separator.is-style-separator-50  { width: 50% !important; }
+.wp-block-separator.is-style-separator-75  { width: 75% !important; }
+.wp-block-separator.is-style-separator-100 { width: 100% !important; }
+
+
+
+/* ======================================================================================================================================== */
+/* MEDIA QUERY SUFFIXES */
+/* ======================================================================================================================================== */
+
+
+/* =========================== */
+/* ==========DESKTOP========== */
+/* =========================== */
+@media (min-width: 1025px) {
+    .align-left.desktop        { text-align: left; }
+    .align-center.desktop      { text-align: center; }
+    .align-right.desktop       { text-align: right; }
+    .align-top.desktop         { align-items: flex-start; }
+    .align-bottom.desktop      { align-items: flex-end; }
+    
+    .justify-left.desktop      { justify-content: flex-start; }
+    .justify-center.desktop    { justify-content: center; }
+    .justify-right.desktop     { justify-content: flex-end; }
+    
+    .button-width-25.desktop   { width: 25%; }
+    .button-width-50.desktop   { width: 50%; }
+    .button-width-75.desktop   { width: 75%; }
+    .button-width-100.desktop  { width: 100%; }
+    
+    .content-width-100.desktop { max-width: 100%; }
+    .content-width-90.desktop  { max-width: 90%; }
+    .content-width-80.desktop  { max-width: 80%; }
+    .content-width-70.desktop  { max-width: 70%; }
+    .content-width-60.desktop  { max-width: 60%; }
+    .content-width-50.desktop  { max-width: 50%; }
+    
+    .display-flex.desktop      { display: flex; }
+    
+    .small-group.desktop       { width: 80px; height: 80px; }
+
+    .hide-on-desktop           { display: none !important; }
+    
+}
+
+
+/* =========================== */
+/* ==========TABLET=========== */
+/* =========================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .align-left.tablet        { text-align: left; }
+    .align-center.tablet      { text-align: center; }
+    .align-right.tablet       { text-align: right; }
+    .align-top.tablet         { align-items: flex-start; }
+    .align-bottom.tablet      { align-items: flex-end; }
+
+    .justify-left.tablet      { justify-content: flex-start; }
+    .justify-center.tablet    { justify-content: center; }
+    .justify-right.tablet     { justify-content: flex-end; }
+
+    .button-width-25.tablet   { width: 25%; }
+    .button-width-50.tablet   { width: 50%; }
+    .button-width-75.tablet   { width: 75%; }
+    .button-width-100.tablet  { width: 100%; }
+
+    .content-width-100.tablet { max-width: 100%; }
+    .content-width-90.tablet  { max-width: 90%; }
+    .content-width-80.tablet  { max-width: 80%; }
+    .content-width-70.tablet  { max-width: 70%; }
+    .content-width-60.tablet  { max-width: 60%; }
+    .content-width-50.tablet  { max-width: 50%; }
+    
+    .display-flex.tablet      { display: flex; }
+    
+    .small-group.tablet       { width: 70px; height: 70px; }
+    
+    .hide-on-tablet           { display: none !important; }
+  
+}
+
+
+/* =========================== */
+/* ==========MOBILE=========== */
+/* =========================== */
+@media (max-width: 767px) {
+    .align-left.mobile        { text-align: left; }
+    .align-center.mobile      { text-align: center; }
+    .align-right.mobile       { text-align: right; }
+    .align-top.mobile         { align-items: flex-start; }
+    .align-bottom.mobile      { align-items: flex-end; }
+
+    .justify-left.mobile      { justify-content: flex-start; }
+    .justify-center.mobile    { justify-content: center; }
+    .justify-right.mobile     { justify-content: flex-end; }
+
+    .button-width-25.mobile   { width: 25%; }
+    .button-width-50.mobile   { width: 50%; }
+    .button-width-75.mobile   { width: 75%; }
+    .button-width-100.mobile  { width: 100%; }
+
+    .content-width-100.mobile { max-width: 100%; }
+    .content-width-90.mobile  { max-width: 90%; }
+    .content-width-80.mobile  { max-width: 80%; }
+    .content-width-70.mobile  { max-width: 70%; }
+    .content-width-60.mobile  { max-width: 60%; }
+    .content-width-50.mobile  { max-width: 50%; }
+    
+    .display-flex.mobile      { display: flex; }
+    
+    .small-group.mobile       { width: 60px; height: 60px; }
+    
+    .hide-on-mobile           { display: none !important; }
+  
+    .mobile-text              { font-size: 20px; }
+    
+    .stack-on-mobile          { flex-direction: column !important; gap: 1rem; }
+  
+}
+
