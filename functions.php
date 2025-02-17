@@ -30,22 +30,6 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 /* ==================================================================== */
 
 
-// add_action( 'wp_enqueue_scripts', function() {
-//     // Enqueue the default style.css
-//     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'chld_thm_cfg_parent' ) );
-    
-//     // Enqueue the custom-overrides.css with a higher priority to ensure it loads last
-//     wp_enqueue_style( 'custom-overrides', get_stylesheet_directory_uri() . '/custom-overrides.css', array( 'child-style' ), null, 'all' );
-// }, 10 );
-
-// // Enqueue custom-overrides.css for the Block Editor
-// add_action( 'enqueue_block_editor_assets', function() {
-//     wp_enqueue_style( 'custom-editor-overrides', get_stylesheet_directory_uri() . '/custom-overrides.css', array(), null, 'all' );
-// });
-
-// // Add theme support
-// add_theme_support( 'experimental-theme-json' );
-
 add_action( 'wp_enqueue_scripts', function() {
     // Enqueue the default style.css
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'chld_thm_cfg_parent' ) );
