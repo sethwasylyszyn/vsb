@@ -324,14 +324,12 @@ ul { display: flex; flex-direction: column; } /* Ensures items stack vertically 
 .is-style-bg-grid-full-diagonal              { background: var(--fade-gradient), url(images-grids/grid-full-diagonal.svg) no-repeat; background-size: 100%; }
 .is-style-bg-grid-diagonal-top               { background: var(--fade-gradient), url(images-grids/grid-diagonal-top.svg) no-repeat; background-size: 100%; }
 .is-style-bg-grid-diagonal-bottom            { background: var(--fade-gradient), url(images-grids/grid-diagonal-bottom.svg) no-repeat; background-size: 100%; }
-.is-style-bg-grid-dots                       { background: var(--fade-gradient), url(images-grids/grid-dots.svg) no-repeat; background-size: 100%; }
 .is-style-bg-dots-horizontal-top             { background: var(--fade-gradient), url(images-grids/dots-horizontal-top.svg) no-repeat; background-size: 100%; }
 .is-style-bg-dots-circle-top-right           { background: var(--fade-gradient), url(images-grids/dots-circle-top-right.svg) no-repeat; background-size: 100%; }
 .is-style-bg-dots-circle-top-left            { background: var(--fade-gradient), url(images-grids/dots-circle-top-left.svg) no-repeat; background-size: 100%; }
-.is-style-bg-dots-square-top-right           { background: var(--fade-gradient), url(images-grids/dots-square-top-right.svg) no-repeat; background-size: 100%; }
-.is-style-bg-dots-square-top-left            { background: var(--fade-gradient), url(images-grids/dots-square-top-left.svg) no-repeat; background-size: 100%; }
-.is-style-bg-dots-arrows                     { background: var(--fade-gradient), url(images-grids/dots-arrows.svg) no-repeat; background-size: 100%; }
 
+
+img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-model-1.jpg); }
 
 
 /* ==================================================================== */

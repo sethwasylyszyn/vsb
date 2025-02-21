@@ -172,13 +172,9 @@ function custom_background_styles() {
         ['name' => 'bg-grid-full-diagonal', 'label' => 'Grid Diagonal'],
         ['name' => 'bg-grid-diagonal-top', 'label' => 'Diagonal Top'],
         ['name' => 'bg-grid-diagonal-bottom', 'label' => 'Diagonal Bottom'],
-        ['name' => 'bg-grid-dots', 'label' => 'Dots'],
         ['name' => 'bg-dots-horizontal-top', 'label' => 'Dots Top'],
         ['name' => 'bg-dots-circle-top-right', 'label' => 'Circle Top Right'],
-        ['name' => 'bg-dots-circle-top-left', 'label' => 'Circle Top Left'],
-        ['name' => 'bg-dots-square-top-right', 'label' => 'Square Top Right'],
-        ['name' => 'bg-dots-square-top-left', 'label' => 'Square Top Left'],
-        ['name' => 'bg-dots-arrows', 'label' => 'Arrows']
+        ['name' => 'bg-dots-circle-top-left', 'label' => 'Circle Top Left']
     ];
 
     foreach ($background_styles as $style) {
