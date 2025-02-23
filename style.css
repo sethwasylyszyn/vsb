@@ -59,11 +59,7 @@ Updated: 2025-01-26 03:52:01
 html { font-size: var(--fs-base); }
 
 /* Set Open Sans as the default font, but allow overrides */
-.wp-block-heading {
-    font-family: var(--font-heading, 'Open Sans', sans-serif);
-    text-decoration: none;
-    text-transform: capitalize;
-}
+.wp-block-heading { font-family: var(--font-heading, 'Open Sans', sans-serif); text-decoration: none; text-transform: capitalize; }
 
 /* Ensure manually selected fonts override the default */
 .wp-block-heading[style*="font-family"] { font-family: inherit ; }
@@ -88,9 +84,7 @@ p, ul, ol {
     text-decoration: none; 
     color: var(--color-sub-heading);
 }
-p.large, ul.large, ol.large {
-    font-size: 1.25rem; /* Default large size */
-}
+p.large, ul.large, ol.large { font-size: 1.25rem; /* Default large size */ }
 
 
 /* ==================================================================== */
@@ -126,19 +120,13 @@ p.large, ul.large, ol.large {
     p.large, ul.large, ol.large { font-size: 0.875rem; line-height: 1.4; }
 }
 
-
-
-
-
 /* ======================================================================================================================================== */
 /* BUTTONS */
 /* ======================================================================================================================================== */
 
-/* Fix: Ensure "default" doesn't override the bold default */
-.wp-block-button__link:not([style]), .elementor-button:not([style]) { font-weight: bold; }
+.wp-block-button__link:not([style]), .elementor-button:not([style]) { font-weight: bold; } /* Fix: Ensure "default" doesn't override the bold default */
 .wp-block-buttons { margin: 0px; padding: 0px; }
 .wp-block-button__link:focus { outline: 2px solid var(--color-secondary); }
-
 
 body button, .wp-block-button__link, .elementor-button {
     display: inline-block;
@@ -153,48 +141,34 @@ body button, .wp-block-button__link, .elementor-button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 /* ==================================================================== */
 /* Responsive Adjustments -- BUTTONS */
 /* ==================================================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body button, .wp-block-button__link, .elementor-button {
-        font-size: 0.9375rem; /* 15px */
-        padding: 0.625rem 1.25rem;
-    }
-
+    body button, .wp-block-button__link, .elementor-button { font-size: 0.9375rem; /* 15px */ padding: 0.625rem 1.25rem; }
 }
 
 @media (max-width: 767px) {
-    body button, .wp-block-button__link, .elementor-button {
-        font-size: 0.875rem; /* 14px */
-        padding: 0.5rem 1rem;
-    }
-
+    body button, .wp-block-button__link, .elementor-button { font-size: 0.875rem; /* 14px */ padding: 0.5rem 1rem; }
 }
-
 
 /* ==================================================================== */
 /* Button 1 (Primary Button) */
 /* ==================================================================== */
 .wp-block-button.is-style-button-1 .wp-block-button__link, 
 .wp-block-button.is-style-button-1-rad-10 .wp-block-button__link, 
-.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link {
-    background-color: var(--color-primary);
-    color: white;
-}
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link 
+{ background-color: var(--color-primary); color: white; }
 
 /* Button 1 - Hover */
 .wp-block-button.is-style-button-1 .wp-block-button__link:hover,
 .wp-block-button.is-style-button-1-rad-10 .wp-block-button__link:hover,
-.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link:hover {
-    background-color: var(--color-secondary);
-}
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link:hover 
+{ background-color: var(--color-secondary); }
 
 /* Button 1 - Radius Variants */
 .wp-block-button.is-style-button-1-rad-10 .wp-block-button__link { border-radius: 10px; }
 .wp-block-button.is-style-button-1-rad-30 .wp-block-button__link { border-radius: 30px; }
-
 
 
 /* ==================================================================== */
@@ -202,23 +176,18 @@ body button, .wp-block-button__link, .elementor-button {
 /* ==================================================================== */
 .wp-block-button.is-style-button-2 .wp-block-button__link,
 .wp-block-button.is-style-button-2-rad-10 .wp-block-button__link,
-.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link {
-    background-color: white;
-    color: var(--color-primary);
-}
+.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link 
+{ background-color: white; color: var(--color-primary); }
 
 /* Button 2 - Hover */
 .wp-block-button.is-style-button-2 .wp-block-button__link:hover,
 .wp-block-button.is-style-button-2-rad-10 .wp-block-button__link:hover,
-.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link:hover {
-    background-color: var(--color-secondary);
-    color: white;
-}
+.wp-block-button.is-style-button-2-rad-30 .wp-block-button__link:hover 
+{ background-color: var(--color-secondary); color: white; }
 
 /* Button 2 - Radius Variants */
 .wp-block-button.is-style-button-2-rad-10 .wp-block-button__link { border-radius: 10px; }
 .wp-block-button.is-style-button-2-rad-30 .wp-block-button__link { border-radius: 30px; }
-
 
 
 /* ==================================================================== */
@@ -226,61 +195,47 @@ body button, .wp-block-button__link, .elementor-button {
 /* ==================================================================== */
 .wp-block-button.is-style-button-3-primary .wp-block-button__link,
 .wp-block-button.is-style-button-3-secondary .wp-block-button__link,
-.wp-block-button.is-style-button-3-white .wp-block-button__link {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
+.wp-block-button.is-style-button-3-white .wp-block-button__link 
+{ background-color: transparent; padding: 0; margin: 0; }
 
 /* Button 3 - Hover */
 .wp-block-button.is-style-button-3-primary .wp-block-button__link:hover,
 .wp-block-button.is-style-button-3-secondary .wp-block-button__link:hover,
-.wp-block-button.is-style-button-3-white .wp-block-button__link:hover {
-    color: var(--color-tertiary);
-}
+.wp-block-button.is-style-button-3-white .wp-block-button__link:hover 
+{ color: var(--color-tertiary); }
 
 /* Button 3 - Variants */
 .wp-block-button.is-style-button-3-primary .wp-block-button__link   { color: var(--color-primary); }
 .wp-block-button.is-style-button-3-secondary .wp-block-button__link { color: var(--color-secondary); }
 .wp-block-button.is-style-button-3-white .wp-block-button__link     { color: #FFFFFF; }
 
-
-
-
-
-
 /* ======================================================================================================================================== */
 /* IMAGES */
 /* ======================================================================================================================================== */
 
-.image-zoom { overflow: hidden; display: inline-block; }
-
-.image-zoom img { 
-  width: 100%; /* Ensures it maintains the same width */
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-zoom:hover img { transform: scale(1.2); /* Zooms in the image */ }
+.image-zoom             { overflow: hidden; display: inline-block; }
+.image-zoom img         { width: 100%; transition: transform 0.3s ease-in-out; } /* Ensures it maintains the same width */
+.image-zoom:hover img   { transform: scale(1.2); } /* Zooms in the image */
 
 /* ==================================================================== */
 /* Responsive Adjustments -- IMAGES */
 /* ==================================================================== */
 @media (min-width: 1025px) {
-    .heading-image-square.desktop { width: 500px; height: auto; }
-    .heading-image-wide.desktop   { width: 1000px; height: auto; }
-    .small-image.desktop          { width: 80px; height: auto; }
+    .heading-image-square.desktop   { width: 500px; height: auto; }
+    .heading-image-wide.desktop     { width: 1000px; height: auto; }
+    .small-image.desktop            { width: 80px; height: auto; }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .heading-image-square.tablet { width: 500px; height: auto; }
-    .heading-image-wide.tablet   { width: 600px; height: auto; }
-    .small-image.tablet          { width: 70px; height: auto; }
+    .heading-image-square.tablet    { width: 500px; height: auto; }
+    .heading-image-wide.tablet      { width: 600px; height: auto; }
+    .small-image.tablet             { width: 70px; height: auto; }
 }
 
 @media (max-width: 767px) {
-    .heading-image-square.mobile { width: 200px; height: auto; }
-    .heading-image-wide.mobile   { width: 300px; height: auto; }
-    .small-image.mobile          { width: 60px; height: auto; }
+    .heading-image-square.mobile    { width: 200px; height: auto; }
+    .heading-image-wide.mobile      { width: 300px; height: auto; }
+    .small-image.mobile             { width: 60px; height: auto; }
 }
 
 
@@ -288,26 +243,14 @@ body button, .wp-block-button__link, .elementor-button {
 /* MISCELLANEOUS CODE */
 /* ======================================================================================================================================== */
 
-/* Removes the underline decoration from links */
-.entry-content.wp-block-post-content a, .wp-block-comment-content a, p a, .wp-block-heading a { text-decoration: none; }
+.entry-content.wp-block-post-content a, .wp-block-comment-content a, p a, .wp-block-heading a { text-decoration: none; }        /* Removes the underline decoration from links */
 
-ul { display: flex; flex-direction: column; } /* Ensures items stack vertically */
+ul { display: flex; flex-direction: column; }  /* Ensures items stack vertically */
 
-.wp-block-group { margin: 0; padding: 0; } /* Removes default margins for all new WordPress groups */
-.wp-block-group.shadow { border: 1px solid transparent; }
-
-.preheading {
-    color: var(--color-primary);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: 500; /* Medium */
-}
-.preheading.tight { letter-spacing: 2px; font-weight: bold; }
+.wp-block-group         { margin: 0; padding: 0; } /* Removes default margins for all new WordPress groups */
+.wp-block-group.shadow  { border: 1px solid transparent; }
 
 .shadow { box-shadow: 0px 0px 10px 0px black;} 
-
-
-
 
 
 /* ==================================================================== */
@@ -328,12 +271,8 @@ ul { display: flex; flex-direction: column; } /* Ensures items stack vertically 
 .is-style-bg-dots-circle-top-right           { background: var(--fade-gradient), url(images-grids/dots-circle-top-right.svg) no-repeat; background-size: 100%; }
 .is-style-bg-dots-circle-top-left            { background: var(--fade-gradient), url(images-grids/dots-circle-top-left.svg) no-repeat; background-size: 100%; }
 
-
-img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-model-1.jpg); }
-
-
 /* ==================================================================== */
-/* Separator Line */
+/* SEPARATOR LINE */
 /* ==================================================================== */
 .wp-block-separator                        { margin: 0; }
 .wp-block-separator.is-style-separator-25  { width: 25% !important; }
@@ -341,12 +280,21 @@ img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-
 .wp-block-separator.is-style-separator-75  { width: 75% !important; }
 .wp-block-separator.is-style-separator-100 { width: 100% !important; }
 
-
+/* ==================================================================== */
+/* HEADING & PARAGRAPH ELEMENTS */
+/* ==================================================================== */
+.wp-block-heading.is-style-primary-heading              { color: var(--color-primary); }
+.wp-block-heading.is-style-white-heading                { color: #FFFFFF; }
+.wp-block-heading.is-style-preheading                   { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }
+.wp-block-heading.is-style-preheading-tight             { color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+.wp-block-paragraph.is-style-primary-paragraph            { color: var(--color-primary); }
+.wp-block-paragraph.is-style-white-paragraph              { color: #FFFFFF; }
+.wp-block-paragraph.is-style-preheading-paragraph         { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }
+.wp-block-paragraph.is-style-preheading-tight-paragraph   { color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
 
 /* ======================================================================================================================================== */
 /* MEDIA QUERY SUFFIXES */
 /* ======================================================================================================================================== */
-
 
 /* =========================== */
 /* ==========DESKTOP========== */
@@ -375,9 +323,7 @@ img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-
     .content-width-50.desktop  { max-width: 50%; }
     
     .display-flex.desktop      { display: flex; }
-    
     .small-group.desktop       { width: 80px; height: 80px; }
-
     .hide-on-desktop           { display: none !important; }
     
 }
@@ -410,9 +356,7 @@ img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-
     .content-width-50.tablet  { max-width: 50%; }
     
     .display-flex.tablet      { display: flex; }
-    
     .small-group.tablet       { width: 70px; height: 70px; }
-    
     .hide-on-tablet           { display: none !important; }
   
 }
@@ -445,14 +389,9 @@ img.phi-fitness-model-1 { display: block; background-image: url(/images/fitness-
     .content-width-50.mobile  { max-width: 50%; }
     
     .display-flex.mobile      { display: flex; }
-    
     .small-group.mobile       { width: 60px; height: 60px; }
-    
     .hide-on-mobile           { display: none !important; }
-  
     .mobile-text              { font-size: 20px; }
-    
     .stack-on-mobile          { flex-direction: column !important; gap: 1rem; }
   
 }
-
