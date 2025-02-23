@@ -18,30 +18,30 @@ Updated: 2025-01-26 03:52:01
     --font-body: 'Lato', sans-serif;
     
     /* Solid Colors */
-    --color-primary: #1D4ED8;
-    --color-secondary: #34D399;
-    --color-tertiary: #FACC15;
-    --color-primary-light: #93C5FD;
+    --color-primary:         #1D4ED8;
+    --color-secondary:       #34D399;
+    --color-tertiary:        #FACC15;
+    --color-primary-light:   #93C5FD;
     --color-secondary-light: #6EE7B7;
-    --color-tertiary-light: #FFEDD5;
-    --color-background: #FFFFFF;
-    --color-background-alt: #F3F3F3;
-    --color-heading: #333333;
-    --color-sub-heading: #222222;
-    --color-border: #000000;
-    --color-border-alt: #CCCCCC;
-    --color-gold-star: #FACC15;
-    --color-transparent: rgba(0, 0, 0, 0);
+    --color-tertiary-light:  #FFEDD5;
+    --color-background:      #FFFFFF;
+    --color-background-alt:  #F3F3F3;
+    --color-heading:         #333333;
+    --color-sub-heading:     #222222;
+    --color-border:          #000000;
+    --color-border-alt:      #CCCCCC;
+    --color-gold-star:       #FACC15;
+    --color-transparent:     rgba(0, 0, 0, 0);
 
     /* Gradients */
-    --gradient-primary-top: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
-    --gradient-primary-bottom: linear-gradient(360deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
-    --gradient-secondary-top: linear-gradient(180deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
-    --gradient-secondary-bottom: linear-gradient(360deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
-    --gradient-tertiary-top: linear-gradient(180deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
-    --gradient-tertiary-bottom: linear-gradient(360deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
-    --gradient-fade-top: linear-gradient(180deg, var(--color-background) 0%, var(--color-primary-light) 60%);
-    --gradient-fade-bottom: linear-gradient(360deg, var(--color-background) 0%, var(--color-primary-light) 60%);
+    --gradient-primary-top:         linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
+    --gradient-primary-bottom:      linear-gradient(360deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
+    --gradient-secondary-top:       linear-gradient(180deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
+    --gradient-secondary-bottom:    linear-gradient(360deg, var(--color-secondary-light) 0%, var(--color-secondary) 60%);
+    --gradient-tertiary-top:        linear-gradient(180deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
+    --gradient-tertiary-bottom:     linear-gradient(360deg, var(--color-tertiary-light) 0%, var(--color-tertiary) 60%);
+    --gradient-fade-top:            linear-gradient(180deg, var(--color-background) 0%, var(--color-primary-light) 60%);
+    --gradient-fade-bottom:         linear-gradient(360deg, var(--color-background) 0%, var(--color-primary-light) 60%);
 
     /* Fade Gradient Masks */
     --fade-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%);
@@ -51,6 +51,26 @@ Updated: 2025-01-26 03:52:01
 }
 
 
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-Light.woff2') format('woff2'), url('assets/fonts/Lato-Light.woff') format('woff'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-LightItalic.woff2') format('woff2'), url('assets/fonts/Lato-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-Regular.woff2') format('woff2'), url('assets/fonts/Lato-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-Italic.woff2') format('woff2'), url('assets/fonts/Lato-Italic.woff') format('woff'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-Bold.woff2') format('woff2'), url('assets/fonts/Lato-Bold.woff') format('woff'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Lato'; src: url('assets/fonts/Lato-BoldItalic.woff2') format('woff2'), url('assets/fonts/Lato-BoldItalic.woff') format('woff'); font-weight: 700; font-style: italic; }
+
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-Light.woff2') format('woff2'), url('assets/fonts/OpenSans-Light.woff') format('woff'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-LightItalic.woff2') format('woff2'), url('assets/fonts/OpenSans-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-Regular.woff2') format('woff2'), url('assets/fonts/OpenSans-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-Italic.woff2') format('woff2'), url('assets/fonts/OpenSans-Italic.woff') format('woff'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-Medium.woff2') format('woff2'), url('assets/fonts/OpenSans-Medium.woff') format('woff'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-MediumItalic.woff2') format('woff2'), url('assets/fonts/OpenSans-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-SemiBold.woff2') format('woff2'), url('assets/fonts/OpenSans-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-SemiBoldItalic.woff2') format('woff2'), url('assets/fonts/OpenSans-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-Bold.woff2') format('woff2'), url('assets/fonts/OpenSans-Bold.woff') format('woff'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-BoldItalic.woff2') format('woff2'), url('assets/fonts/OpenSans-BoldItalic.woff') format('woff'); font-weight: 700; font-style: italic; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-ExtraBold.woff2') format('woff2'), url('assets/fonts/OpenSans-ExtraBold.woff') format('woff'); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('assets/fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2'), url('assets/fonts/OpenSans-ExtraBoldItalic.woff') format('woff'); font-weight: 800; font-style: italic; }
+
 
 /* ======================================================================================================================================== */
 /* TYPOGRAPHY & SIZES */
@@ -58,32 +78,18 @@ Updated: 2025-01-26 03:52:01
 
 html { font-size: var(--fs-base); }
 
-/* Set Open Sans as the default font, but allow overrides */
-.wp-block-heading { font-family: var(--font-heading, 'Open Sans', sans-serif); text-decoration: none; text-transform: capitalize; }
+.wp-block-heading { font-family: var(--font-heading, 'Open Sans', sans-serif); text-decoration: none; text-transform: capitalize; } /* Set Open Sans as the default font, but allow overrides */
+.wp-block-heading[style*="font-family"] { font-family: inherit ; } /* Ensure manually selected fonts override the default */
 
-/* Ensure manually selected fonts override the default */
-.wp-block-heading[style*="font-family"] { font-family: inherit ; }
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading), sans-serif;
-    text-decoration: none;
-    text-transform: capitalize; /* Capitalize first letter of each word */;
-    color: var(--color-heading);
-}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading), sans-serif; text-decoration: none; text-transform: capitalize; color: var(--color-heading); }
 
 h1 { font-size: 3.5rem; }
 h2 { font-size: 2.75rem; }
 h3 { font-size: 2.125rem; }
 h4 { font-size: 1.5rem; font-weight: bold; }
 h5 { font-size: 1.25rem; }
-p, ul, ol { 
-    font-size: 1rem; 
-    line-height: 1.6; 
-    font-family: var(--font-body); 
-    text-decoration: none; 
-    color: var(--color-sub-heading);
-}
+
+p, ul, ol { font-size: 1rem; line-height: 1.6; font-family: var(--font-body); text-decoration: none; color: var(--color-sub-heading); }
 p.large, ul.large, ol.large { font-size: 1.25rem; /* Default large size */ }
 
 
@@ -209,6 +215,14 @@ body button, .wp-block-button__link, .elementor-button {
 .wp-block-button.is-style-button-3-secondary .wp-block-button__link { color: var(--color-secondary); }
 .wp-block-button.is-style-button-3-white .wp-block-button__link     { color: #FFFFFF; }
 
+
+/* ==================================================================== */
+/* Preheading Button Style */
+/* ==================================================================== */
+.wp-block-button.is-style-button-preheading .wp-block-button__link          { background: var(--gradient-primary-top); padding: 3px 10px; text-transform: uppercase; color: #FFFFFF; border-radius: 30px; }
+.wp-block-button.is-style-button-preheading-white .wp-block-button__link    { background: var(--gradient-fade-top); padding: 3px 10px; text-transform: uppercase; color: #000000; border-radius: 30px; }
+
+
 /* ======================================================================================================================================== */
 /* IMAGES */
 /* ======================================================================================================================================== */
@@ -283,10 +297,10 @@ ul { display: flex; flex-direction: column; }  /* Ensures items stack vertically
 /* ==================================================================== */
 /* HEADING & PARAGRAPH ELEMENTS */
 /* ==================================================================== */
-.wp-block-heading.is-style-primary-heading              { color: var(--color-primary); }
-.wp-block-heading.is-style-white-heading                { color: #FFFFFF; }
-.wp-block-heading.is-style-preheading                   { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }
-.wp-block-heading.is-style-preheading-tight             { color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+.wp-block-heading.is-style-primary-heading                { color: var(--color-primary); }
+.wp-block-heading.is-style-white-heading                  { color: #FFFFFF; }
+.wp-block-heading.is-style-preheading                     { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }
+.wp-block-heading.is-style-preheading-tight               { color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
 .wp-block-paragraph.is-style-primary-paragraph            { color: var(--color-primary); }
 .wp-block-paragraph.is-style-white-paragraph              { color: #FFFFFF; }
 .wp-block-paragraph.is-style-preheading-paragraph         { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }

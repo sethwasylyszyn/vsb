@@ -34,8 +34,7 @@ add_action('admin_head', function() {
         
         /* ==================================================================== */
         /* ========== HIDING the default separator styles ========== */
-        .block-editor-block-styles__item[aria-label="Wide Line"],
-        .block-editor-block-styles__item[aria-label="Dots"] 
+        .block-editor-block-styles__item[aria-label="Wide Line"]
         { display: none !important; }
 
         /* ==================================================================== */
@@ -72,7 +71,9 @@ function custom_button_styles() {
         ['name' => 'button-2-rad-30', 'label' => 'Secondary Button - Radius 30'],
         ['name' => 'button-3-primary', 'label' => 'Text Only - Primary'],
         ['name' => 'button-3-secondary', 'label' => 'Text Only - Secondary'],
-        ['name' => 'button-3-white', 'label' => 'Text Only - White']
+        ['name' => 'button-3-white', 'label' => 'Text Only - White'],
+        ['name' => 'button-preheading', 'label' => 'Preheading'],
+        ['name' => 'button-preheading-white', 'label' => 'Preheading White']
     ];
     foreach ($button_styles as $style) { register_block_style('core/button', $style); }
 }
