@@ -55,9 +55,26 @@ add_theme_support( 'experimental-theme-json' );
 
 
 /* ==================================================================== */
+// This will automatically include all js files in the '/js' folder
+/* ==================================================================== */
+function enqueue_all_scripts_in_directory() {
+    $script_directory = get_stylesheet_directory() . '/js/';
+    $scripts = glob( $script_directory . '*.js' );
+
+    foreach ( $scripts as $script ) {
+        $script_name = basename( $script );
+        $handle = 'script-' . basename( $script_name, '.js' );
+        $script_uri = get_stylesheet_directory_uri() . '/js/' . $script_name;
+        wp_enqueue_script( $handle, $script_uri, array(), '1.0.0', true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_all_scripts_in_directory' );
+
+
+
+/* ==================================================================== */
 // This will automatically include all php files in the '/functions' folder
 /* ==================================================================== */
-
 // require_once get_stylesheet_directory() . '/functions/wp-forms-templates.php'; **for a single file (repeat for each file desired)
 
 foreach ( glob( get_stylesheet_directory() . '/functions/*.php' ) as $file ) {

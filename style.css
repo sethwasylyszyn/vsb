@@ -32,7 +32,7 @@ Updated: 2025-01-26 03:52:01
     --color-border-alt:      #CCCCCC;
     --color-gold-star:       #FACC15;
     --color-transparent:     rgba(0, 0, 0, 0);
-
+    
     /* Gradients */
     --gradient-primary-top:         linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
     --gradient-primary-bottom:      linear-gradient(360deg, var(--color-primary-light) 0%, var(--color-primary) 60%);
@@ -83,46 +83,46 @@ html { font-size: var(--fs-base); }
 
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading), sans-serif; text-decoration: none; text-transform: capitalize; color: var(--color-heading); }
 
-h1 { font-size: 3.5rem; }
-h2 { font-size: 2.75rem; }
-h3 { font-size: 2.125rem; }
-h4 { font-size: 1.5rem; font-weight: bold; }
-h5 { font-size: 1.25rem; }
+h1 { font-size: 56px; }
+h2 { font-size: 44px; }
+h3 { font-size: 34px; }
+h4 { font-size: 24px; font-weight: bold; }
+h5 { font-size: 20px; }
 
 p, ul, ol { font-size: 1rem; line-height: 1.6; font-family: var(--font-body); text-decoration: none; color: var(--color-sub-heading); }
-p.large, ul.large, ol.large { font-size: 1.25rem; /* Default large size */ }
+p.large, ul.large, ol.large { font-size: 20px; /* Default large size */ }
 
 
 /* ==================================================================== */
 /* Responsive Adjustments -- TYPOGRAPHY */
 /* ==================================================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
-    h1 { font-size: 3rem; }
-    h2 { font-size: 2.5rem; }
-    h3 { font-size: 1.875rem; }
-    h4 { font-size: 1.375rem; }
-    h5 { font-size: 1.125rem; }
-    h1.small { font-size: 2.5rem; }
-    h2.small { font-size: 2.125rem; }
-    h3.small { font-size: 1.625rem; }
-    h4.small { font-size: 1.25rem; }
-    h5.small { font-size: 1rem; }
-    p, ul, ol { font-size: 0.9375rem; line-height: 1.5; }
-    p.large, ul.large, ol.large { font-size: 1.125rem; }
+    h1 { font-size: 48px; }
+    h2 { font-size: 40px; }
+    h3 { font-size: 30px; }
+    h4 { font-size: 22px; }
+    h5 { font-size: 18px; }
+    h1.small { font-size: 40px; }
+    h2.small { font-size: 34px; }
+    h3.small { font-size: 26px; }
+    h4.small { font-size: 20px; }
+    h5.small { font-size: 16px; }
+    p, ul, ol { font-size: 15px; line-height: 1.5; }
+    p.large, ul.large, ol.large { font-size: 18px; }
 }
 
 @media (max-width: 767px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    h3 { font-size: 1.5rem; }
-    h4 { font-size: 1.25rem; }
-    h5 { font-size: 1.125rem; }
-    h1.small { font-size: 2rem; }
-    h2.small { font-size: 1.75rem; }
-    h3.small { font-size: 1.375rem; }
-    h4.small { font-size: 1.125rem; }
-    h5.small { font-size: 0.9375rem; }
-    p, ul, ol { font-size: 0.875rem; line-height: 1.4; }
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 20px; }
+    h5 { font-size: 18px; }
+    h1.small { font-size: 32px; }
+    h2.small { font-size: 28px; }
+    h3.small { font-size: 22px; }
+    h4.small { font-size: 18px; }
+    h5.small { font-size: 15px; }
+    p, ul, ol { font-size: 14px; line-height: 1.4; }
     p.large, ul.large, ol.large { font-size: 0.875rem; line-height: 1.4; }
 }
 
@@ -136,7 +136,7 @@ p.large, ul.large, ol.large { font-size: 1.25rem; /* Default large size */ }
 
 body button, .wp-block-button__link, .elementor-button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 12px 24px;
     font-size: 1rem;
     font-weight: bold;
     text-transform: capitalize;
@@ -151,11 +151,11 @@ body button, .wp-block-button__link, .elementor-button {
 /* Responsive Adjustments -- BUTTONS */
 /* ==================================================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body button, .wp-block-button__link, .elementor-button { font-size: 0.9375rem; /* 15px */ padding: 0.625rem 1.25rem; }
+    body button, .wp-block-button__link, .elementor-button { font-size: 15px; /* 15px */ padding: 10px 20px; }
 }
 
 @media (max-width: 767px) {
-    body button, .wp-block-button__link, .elementor-button { font-size: 0.875rem; /* 14px */ padding: 0.5rem 1rem; }
+    body button, .wp-block-button__link, .elementor-button { font-size: 14px; /* 14px */ padding: 8px 16px; }
 }
 
 /* ==================================================================== */
@@ -173,8 +173,8 @@ body button, .wp-block-button__link, .elementor-button {
 { background-color: var(--color-secondary); }
 
 /* Button 1 - Radius Variants */
-.wp-block-button.is-style-button-1-rad-10 .wp-block-button__link { border-radius: 10px; }
-.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link { border-radius: 30px; }
+.wp-block-button.is-style-button-1-rad-10 .wp-block-button__link    { border-radius: 10px; }
+.wp-block-button.is-style-button-1-rad-30 .wp-block-button__link    { border-radius: 30px; }
 
 
 /* ==================================================================== */
@@ -305,6 +305,128 @@ ul { display: flex; flex-direction: column; }  /* Ensures items stack vertically
 .wp-block-paragraph.is-style-white-paragraph              { color: #FFFFFF; }
 .wp-block-paragraph.is-style-preheading-paragraph         { color: var(--color-primary); letter-spacing: 4px; text-transform: uppercase; font-weight: 500; /* Medium */ }
 .wp-block-paragraph.is-style-preheading-tight-paragraph   { color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+
+
+
+/* ==================================================================== */
+/* PRICING TABLES */
+/* ==================================================================== */
+
+/* Pricing Table - GLOBAL STYLES */
+.pricing-table .wp-block-column         { border-radius: 10px; }
+.pricing-table .pt-emphasis-group       { background-color: rgba(0,0,0,0); padding: 0.44rem; border-radius: 10px 10px 0px 0px; }
+.pricing-table .pt-emphasis-title       { color: transparent; }
+.pricing-table .pt-background-group     { background-color: #FFFFFF; padding: 2.25rem; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgb(0, 0, 0); }
+.pricing-table .wp-block-separator      { margin: 1.5rem 0px; color: var(--color-border-alt); }
+.pt-content-group p, h2, h3, .pt-features-left-blue-checks, .pt-features-left-green-checks, .wp-block-separator     { color: inherit; }
+
+/* Pricing Table - LEFT */
+.pricing-table.left .pt-group-heading-center                    { display: none !important; }
+.pricing-table.left .pt-features-left-green-checks              { display: none !important; }
+.pricing-table.left .pt-features-center                         { display: none !important; }
+.pricing-table.left .pt-separator-2                             { display: none !important; }
+.pricing-table.left.no-features .pt-features-left-blue-checks   { display: none !important; }
+.pricing-table.left .wp-block-button .wp-block-button__link     { border-radius: 30px;}
+
+/* Pricing Table - CENTER */
+.pricing-table.center .pt-group-heading-left                { display: none !important; }
+.pricing-table.center .pt-features-left-green-checks        { display: none !important; }
+.pricing-table.center .pt-features-left-blue-checks         { display: none !important; }
+.pricing-table.center.no-features .pt-features-center       { display: none !important; }
+.pricing-table.center.no-features .pt-separator-2           { display: none !important; }
+
+/* Pricing Table - HIGHLIGHT */
+.pricing-table.highlight-1 .wp-block-column:nth-child(1) .pt-background-group, 
+.pricing-table.highlight-2 .wp-block-column:nth-child(2) .pt-background-group, 
+.pricing-table.highlight-3 .wp-block-column:nth-child(3) .pt-background-group, 
+.pricing-table.highlight-4 .wp-block-column:nth-child(4) .pt-background-group 
+{ background: var(--gradient-primary-bottom); }
+
+.pricing-table.highlight-1 .wp-block-column:nth-child(1) .pt-content-group, 
+.pricing-table.highlight-1 .wp-block-column:nth-child(1) .wp-block-separator, 
+.pricing-table.highlight-2 .wp-block-column:nth-child(2) .pt-content-group, 
+.pricing-table.highlight-2 .wp-block-column:nth-child(2) .wp-block-separator, 
+.pricing-table.highlight-3 .wp-block-column:nth-child(3) .pt-content-group, 
+.pricing-table.highlight-3 .wp-block-column:nth-child(3) .wp-block-separator, 
+.pricing-table.highlight-4 .wp-block-column:nth-child(4) .pt-content-group, 
+.pricing-table.highlight-4 .wp-block-column:nth-child(4) .wp-block-separator 
+{ color: #FFFFFF; }
+
+.pricing-table.highlight-1 .wp-block-column:nth-child(1) .wp-block-button .wp-block-button__link, 
+.pricing-table.highlight-2 .wp-block-column:nth-child(2) .wp-block-button .wp-block-button__link, 
+.pricing-table.highlight-3 .wp-block-column:nth-child(3) .wp-block-button .wp-block-button__link, 
+.pricing-table.highlight-4 .wp-block-column:nth-child(4) .wp-block-button .wp-block-button__link 
+{ background-color: #FFFFFF; color: var(--color-primary); }
+
+.pricing-table.highlight-1 .wp-block-column:nth-child(1) .wp-block-button .wp-block-button__link:hover, 
+.pricing-table.highlight-2 .wp-block-column:nth-child(2) .wp-block-button .wp-block-button__link:hover, 
+.pricing-table.highlight-3 .wp-block-column:nth-child(3) .wp-block-button .wp-block-button__link:hover, 
+.pricing-table.highlight-4 .wp-block-column:nth-child(4) .wp-block-button .wp-block-button__link:hover 
+{ background-color: var(--color-secondary); color: #FFFFFF; }
+
+.pricing-table.highlight-1.left .wp-block-column:nth-child(1) .pt-features-left-blue-checks, 
+.pricing-table.highlight-2.left .wp-block-column:nth-child(2) .pt-features-left-blue-checks, 
+.pricing-table.highlight-3.left .wp-block-column:nth-child(3) .pt-features-left-blue-checks, 
+.pricing-table.highlight-4.left .wp-block-column:nth-child(4) .pt-features-left-blue-checks 
+{ display: none !important; }
+
+.pricing-table.highlight-1.left .wp-block-column:nth-child(1) .pt-features-left-green-checks, 
+.pricing-table.highlight-2.left .wp-block-column:nth-child(2) .pt-features-left-green-checks, 
+.pricing-table.highlight-3.left .wp-block-column:nth-child(3) .pt-features-left-green-checks, 
+.pricing-table.highlight-4.left .wp-block-column:nth-child(4) .pt-features-left-green-checks 
+{ display: flex !important; }
+
+/* Pricing Tabble - EMPHASIS (No Highlight) */
+.pricing-table.emphasis-1 .wp-block-column:nth-child(1) { box-shadow: 0px 0px 10px 0px; }
+.pricing-table.emphasis-2 .wp-block-column:nth-child(2) { box-shadow: 0px 0px 10px 0px; }
+.pricing-table.emphasis-3 .wp-block-column:nth-child(3) { box-shadow: 0px 0px 10px 0px; }
+.pricing-table.emphasis-4 .wp-block-column:nth-child(4) { box-shadow: 0px 0px 10px 0px; }
+  
+.pricing-table.emphasis-1 .wp-block-column:nth-child(1) .pt-background-group,
+.pricing-table.emphasis-2 .wp-block-column:nth-child(2) .pt-background-group,
+.pricing-table.emphasis-3 .wp-block-column:nth-child(3) .pt-background-group,
+.pricing-table.emphasis-4 .wp-block-column:nth-child(4) .pt-background-group 
+{ border-radius: 0px 0px 10px 10px; box-shadow: none; }
+  
+.pricing-table.emphasis-1 .wp-block-column:nth-child(1) .pt-emphasis-group,
+.pricing-table.emphasis-2 .wp-block-column:nth-child(2) .pt-emphasis-group,
+.pricing-table.emphasis-3 .wp-block-column:nth-child(3) .pt-emphasis-group,
+.pricing-table.emphasis-4 .wp-block-column:nth-child(4) .pt-emphasis-group 
+{ background-color: var(--color-primary); }
+  
+.pricing-table.emphasis-1 .wp-block-column:nth-child(1) .pt-emphasis-title,
+.pricing-table.emphasis-2 .wp-block-column:nth-child(2) .pt-emphasis-title,
+.pricing-table.emphasis-3 .wp-block-column:nth-child(3) .pt-emphasis-title,
+.pricing-table.emphasis-4 .wp-block-column:nth-child(4) .pt-emphasis-title 
+{ color: #FFFFFF; }
+
+/* Pricing Table - EMPHASIS (Yes Highlight) */
+.pricing-table.emphasis-1.highlight-1 .wp-block-column:nth-child(1) .pt-emphasis-group,
+.pricing-table.emphasis-2.highlight-2 .wp-block-column:nth-child(2) .pt-emphasis-group,
+.pricing-table.emphasis-3.highlight-3 .wp-block-column:nth-child(3) .pt-emphasis-group,
+.pricing-table.emphasis-4.highlight-4 .wp-block-column:nth-child(4) .pt-emphasis-group 
+{ background-color: #FFFFFF; }
+
+.pricing-table.emphasis-1.highlight-1 .wp-block-column:nth-child(1) .pt-emphasis-title,
+.pricing-table.emphasis-2.highlight-2 .wp-block-column:nth-child(2) .pt-emphasis-title,
+.pricing-table.emphasis-3.highlight-3 .wp-block-column:nth-child(3) .pt-emphasis-title,
+.pricing-table.emphasis-4.highlight-4 .wp-block-column:nth-child(4) .pt-emphasis-title 
+{ color: var(--color-primary); }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======================================================================================================================================== */
 /* MEDIA QUERY SUFFIXES */
